@@ -68,3 +68,7 @@ textarea:focus {
   justify-content: space-between;
   align-items: center;
 }
+
+.delete-icon {
+  cursor: pointer;
+}
