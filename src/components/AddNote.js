@@ -1,16 +1,19 @@
 import { useState } from "react";
 
-const AddNote = ({handleAddNote}) => {
+const AddNote = ({ handleAddNote }) => {
   const [noteText, setNoteText] = useState("");
-
+  const characterLimit = 200;
   const handleChange = (event) => {
     setNoteText(event.target.value);
   };
-  
-  const handleSaveClick = () => {
-    handleAddNote(noteText);
-  };
 
+  const handleSaveClick = () => {
+    //to every new note Blank
+    if (noteText.trim().length > 0) {
+      handleAddNote(noteText);
+      setNoteText("");
+    }
+  };
 
   return (
     <div className="note new">
@@ -21,7 +24,7 @@ const AddNote = ({handleAddNote}) => {
         value={noteText}
         onChange={handleChange}></textarea>
       <div className="note-footer">
-        <small>200 Remaing</small>
+        <small>{characterLimit - noteText.length} Remaining</small>
         <button className="save" onClick={handleSaveClick}>
           Save
         </button>
