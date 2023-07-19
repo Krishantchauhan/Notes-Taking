@@ -32,6 +32,7 @@ code {
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
+  min-height: 100vh;
 }
 
 .notes-list {
