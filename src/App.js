@@ -32,12 +32,19 @@ const App = () => {
   ]);
 
   const addNote = (text) => {
-    console.log(text);
+    const date = new Date();
+    const newNote = {
+      id: nanoid(),
+      text: text,
+      date: date.toLocaleDateString(),
+    };
+    const newNotes = [...notes, newNote]; //create new array insted of updating the old array;
+    setNotes(newNotes);
   };
-  
+
   return (
     <div className="container">
-      <NotesList notes={notes} handleAddNote={addNote}/>
+      <NotesList notes={notes} handleAddNote={addNote} />
     </div>
   );
 };
