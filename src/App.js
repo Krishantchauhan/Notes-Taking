@@ -1,5 +1,10 @@
+import NotesList from './components/NotesList';
+
+
 const App = () => {
-  return <p>Hello Krisiya </p>;
+  return <div className='container'>
+    <NotesList/>
+  </div>;
 };
 
 
