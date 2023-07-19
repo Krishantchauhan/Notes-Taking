@@ -5,6 +5,7 @@ const AddNote = ({ handleAddNote }) => {
   const characterLimit = 200;
 
   const handleChange = (event) => {
+    //block Limits characters after reach limit
     if (characterLimit - event.target.value.length >= 0)
       setNoteText(event.target.value);
   };
