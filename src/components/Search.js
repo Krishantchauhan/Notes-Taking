@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdSearch } from 'react-icons/md';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 
 const search = ({ handleSearchNote }) => {
@@ -14,9 +14,9 @@ const search = ({ handleSearchNote }) => {
         className="search-input"
         onChange={(event) => handleSearchNote(event.target.value)}
       />
-      <a href="#" className="search-btn">
-        <FontAwesomeIcon icon={faSearch} />
-      </a>
+      {/* <a href="#" className="search-btn"> */}
+        {/* <FontAwesomeIcon icon={faSearch} /> */}
+      {/* </a> */}
     </div>
   );
 };

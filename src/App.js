@@ -5,7 +5,7 @@ import Search from "./components/Search";
 import Header from "./components/Header";
 
 const App = () => {
-  const [notes, setNotes] = useState([
+  const [notes, setNotes] = useState(JSON.parse(localStorage.getItem("react-notes-app-data")) || [
     {
       id: nanoid(),
       text: "This is my first Note!",
@@ -26,14 +26,7 @@ const App = () => {
   const [searchText, setSearchText] = useState("");
   const [darkMode, setDarkMode] = useState(false);
 
-  useEffect(() => {
-    const savedNotes = JSON.parse(localStorage.getItem("react-notes-app-data"));
-
-    if (savedNotes) {
-      console.log(savedNotes);
-      setNotes(savedNotes);
-    }
-  }, []);
+  
 
   useEffect(() => {
     localStorage.setItem("react-notes-app-data", JSON.stringify(notes));
