@@ -1,206 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+  font-family: 'Fira Code';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-body {
-  background-image: url("/Users/krishant/Documents/Learning/Study/Project/react-notes-app/img8.jpg");
-  background-repeat: no-repeat;
+.bg-img {
+  width: 100%;
+  height: 100%;
   background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url('data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 2039 818%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cmask id=%22b%22 x=%220%22 y=%220%22 width=%222039%22 height=%22818%22%3E%3Cpath fill=%22url(%23a)%22 d=%22M0 0h2039v818H0z%22%2F%3E%3C%2Fmask%3E%3Cpath d=%22M0 0h2039v818H0z%22%2F%3E%3Cg style=%22transform-origin:center center%22 stroke=%22%23fff%22 stroke-width=%22.408%22 fill=%22none%22 mask=%22url(%23b)%22%3E%3Cpath d=%22M0 0h88.652v88.652H0zM88.652 0h88.652v88.652H88.652zM177.304 0h88.652v88.652h-88.652zM265.957 0h88.652v88.652h-88.652zM354.609 0h88.652v88.652h-88.652zM531.913 0h88.652v88.652h-88.652zM620.565 0h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M709.217 0h88.652v88.652h-88.652zM797.87 0h88.652v88.652H797.87zM886.522 0h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M975.174 0h88.652v88.652h-88.652zM1063.826 0h88.652v88.652h-88.652zM1152.478 0h88.652v88.652h-88.652zM1241.13 0h88.652v88.652h-88.652zM1329.783 0h88.652v88.652h-88.652zM1418.435 0h88.652v88.652h-88.652zM1507.087 0h88.652v88.652h-88.652zM1595.739 0h88.652v88.652h-88.652zM1684.391 0h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M1773.043 0h88.652v88.652h-88.652zM1861.696 0h88.652v88.652h-88.652zM0 88.652h88.652v88.652H0zM88.652 88.652h88.652v88.652H88.652zM177.304 88.652h88.652v88.652h-88.652zM443.261 88.652h88.652v88.652h-88.652zM531.913 88.652h88.652v88.652h-88.652zM709.217 88.652h88.652v88.652h-88.652zM797.87 88.652h88.652v88.652H797.87zM886.522 88.652h88.652v88.652h-88.652zM1152.478 88.652h88.652v88.652h-88.652zM1241.13 88.652h88.652v88.652h-88.652zM1418.435 88.652h88.652v88.652h-88.652zM1507.087 88.652h88.652v88.652h-88.652zM1684.391 88.652h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M1773.043 88.652h88.652v88.652h-88.652zM1861.696 88.652h88.652v88.652h-88.652zM1950.348 88.652H2039v88.652h-88.652zM0 177.304h88.652v88.652H0zM88.652 177.304h88.652v88.652H88.652zM177.304 177.304h88.652v88.652h-88.652zM265.957 177.304h88.652v88.652h-88.652zM354.609 177.304h88.652v88.652h-88.652zM531.913 177.304h88.652v88.652h-88.652zM620.565 177.304h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M709.217 177.304h88.652v88.652h-88.652zM797.87 177.304h88.652v88.652H797.87zM886.522 177.304h88.652v88.652h-88.652zM1063.826 177.304h88.652v88.652h-88.652zM1152.478 177.304h88.652v88.652h-88.652zM1329.783 177.304h88.652v88.652h-88.652zM1418.435 177.304h88.652v88.652h-88.652zM1507.087 177.304h88.652v88.652h-88.652zM1595.739 177.304h88.652v88.652h-88.652zM1773.043 177.304h88.652v88.652h-88.652zM1861.696 177.304h88.652v88.652h-88.652zM1950.348 177.304H2039v88.652h-88.652zM0 265.957h88.652v88.652H0zM88.652 265.957h88.652v88.652H88.652zM265.957 265.957h88.652v88.652h-88.652zM354.609 265.957h88.652v88.652h-88.652zM531.913 265.957h88.652v88.652h-88.652zM709.217 265.957h88.652v88.652h-88.652zM886.522 265.957h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M975.174 265.957h88.652v88.652h-88.652zM1152.478 265.957h88.652v88.652h-88.652zM1241.13 265.957h88.652v88.652h-88.652zM1329.783 265.957h88.652v88.652h-88.652zM1418.435 265.957h88.652v88.652h-88.652zM1507.087 265.957h88.652v88.652h-88.652zM1595.739 265.957h88.652v88.652h-88.652zM1684.391 265.957h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M1773.043 265.957h88.652v88.652h-88.652zM1861.696 265.957h88.652v88.652h-88.652zM0 354.609h88.652v88.652H0zM88.652 354.609h88.652v88.652H88.652zM177.304 354.609h88.652v88.652h-88.652zM265.957 354.609h88.652v88.652h-88.652zM354.609 354.609h88.652v88.652h-88.652zM443.261 354.609h88.652v88.652h-88.652zM709.217 354.609h88.652v88.652h-88.652zM886.522 354.609h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M975.174 354.609h88.652v88.652h-88.652zM1063.826 354.609h88.652v88.652h-88.652zM1241.13 354.609h88.652v88.652h-88.652zM1329.783 354.609h88.652v88.652h-88.652zM1418.435 354.609h88.652v88.652h-88.652zM1507.087 354.609h88.652v88.652h-88.652zM1595.739 354.609h88.652v88.652h-88.652zM1684.391 354.609h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M1773.043 354.609h88.652v88.652h-88.652zM1950.348 354.609H2039v88.652h-88.652zM0 443.261h88.652v88.652H0zM265.957 443.261h88.652v88.652h-88.652zM354.609 443.261h88.652v88.652h-88.652zM443.261 443.261h88.652v88.652h-88.652zM620.565 443.261h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M709.217 443.261h88.652v88.652h-88.652zM797.87 443.261h88.652v88.652H797.87zM886.522 443.261h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M975.174 443.261h88.652v88.652h-88.652zM1152.478 443.261h88.652v88.652h-88.652zM1329.783 443.261h88.652v88.652h-88.652zM1507.087 443.261h88.652v88.652h-88.652zM1595.739 443.261h88.652v88.652h-88.652zM1684.391 443.261h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M1773.043 443.261h88.652v88.652h-88.652zM1861.696 443.261h88.652v88.652h-88.652zM1950.348 443.261H2039v88.652h-88.652zM0 531.913h88.652v88.652H0zM177.304 531.913h88.652v88.652h-88.652zM265.957 531.913h88.652v88.652h-88.652zM354.609 531.913h88.652v88.652h-88.652zM443.261 531.913h88.652v88.652h-88.652zM531.913 531.913h88.652v88.652h-88.652zM620.565 531.913h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M709.217 531.913h88.652v88.652h-88.652zM886.522 531.913h88.652v88.652h-88.652zM1063.826 531.913h88.652v88.652h-88.652zM1152.478 531.913h88.652v88.652h-88.652zM1241.13 531.913h88.652v88.652h-88.652zM1418.435 531.913h88.652v88.652h-88.652zM1507.087 531.913h88.652v88.652h-88.652zM1595.739 531.913h88.652v88.652h-88.652zM1684.391 531.913h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M1773.043 531.913h88.652v88.652h-88.652zM1861.696 531.913h88.652v88.652h-88.652zM1950.348 531.913H2039v88.652h-88.652zM177.304 620.565h88.652v88.652h-88.652zM354.609 620.565h88.652v88.652h-88.652zM443.261 620.565h88.652v88.652h-88.652zM531.913 620.565h88.652v88.652h-88.652zM620.565 620.565h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M709.217 620.565h88.652v88.652h-88.652zM886.522 620.565h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M975.174 620.565h88.652v88.652h-88.652zM1063.826 620.565h88.652v88.652h-88.652zM1152.478 620.565h88.652v88.652h-88.652zM1329.783 620.565h88.652v88.652h-88.652zM1418.435 620.565h88.652v88.652h-88.652zM1507.087 620.565h88.652v88.652h-88.652zM1595.739 620.565h88.652v88.652h-88.652zM1773.043 620.565h88.652v88.652h-88.652zM1861.696 620.565h88.652v88.652h-88.652zM1950.348 620.565H2039v88.652h-88.652zM0 709.217h88.652v88.652H0zM88.652 709.217h88.652v88.652H88.652zM177.304 709.217h88.652v88.652h-88.652zM354.609 709.217h88.652v88.652h-88.652zM443.261 709.217h88.652v88.652h-88.652zM531.913 709.217h88.652v88.652h-88.652zM620.565 709.217h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M709.217 709.217h88.652v88.652h-88.652zM797.87 709.217h88.652v88.652H797.87zM886.522 709.217h88.652v88.652h-88.652zM1063.826 709.217h88.652v88.652h-88.652zM1152.478 709.217h88.652v88.652h-88.652zM1241.13 709.217h88.652v88.652h-88.652zM1329.783 709.217h88.652v88.652h-88.652zM1595.739 709.217h88.652v88.652h-88.652zM1684.391 709.217h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M1773.043 709.217h88.652v88.652h-88.652zM1861.696 709.217h88.652v88.652h-88.652zM1950.348 709.217H2039v88.652h-88.652zM88.652 797.87h88.652v88.652H88.652zM265.957 797.87h88.652v88.652h-88.652zM443.261 797.87h88.652v88.652h-88.652zM531.913 797.87h88.652v88.652h-88.652zM620.565 797.87h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M709.217 797.87h88.652v88.652h-88.652zM886.522 797.87h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M975.174 797.87h88.652v88.652h-88.652zM1063.826 797.87h88.652v88.652h-88.652zM1152.478 797.87h88.652v88.652h-88.652zM1241.13 797.87h88.652v88.652h-88.652zM1329.783 797.87h88.652v88.652h-88.652zM1507.087 797.87h88.652v88.652h-88.652zM1684.391 797.87h88.652v88.652h-88.652z%22%2F%3E%3Cpath d=%22M1773.043 797.87h88.652v88.652h-88.652zM1950.348 797.87H2039v88.652h-88.652z%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CradialGradient id=%22a%22%3E%3Cstop offset=%220%22 stop-color=%22%23fff%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%23fff%22 stop-opacity=%220%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E');
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+@layer utilities {
+  .btn-glow:hover {
+    box-shadow: 0 0 20px rgba(111, 76, 255, 0.5); /* Adds the glowing effect */
+  }
 
-.dark-mode {
-  background-color: black;
-}
-
-.dark-mode h1 {
-  color: white;
-}
-
-.container {
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-  min-height: 100vh;
-}
-
-.notes-list {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.note.new {
-  background-color: #c2fbd7;
-}
-
-.note {
-  transition: all 0.2s ease-in-out;
-}
-.note:hover {
-  transform: scale(1.5);
-}
-
-textarea {
-  border: none;
-  resize: none;
-  background-color: #c2fbd7;
-}
-
-textarea:focus {
-  outline: none;
-}
-
-.save {
-  background-color: #c2ebfb;
-  border-radius: 100px;
-  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
-    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
-    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
-    rgba(44, 187, 99, 0.15) 0 16px 32px;
-  color: green;
-  cursor: pointer;
-  display: inline-block;
-  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
-  padding: 7px 20px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 250ms;
-  border: none;
-  font-size: 16px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.save:hover {
-  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
-    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
-    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
-    rgba(44, 187, 99, 0.25) 0 16px 32px;
-  transform: scale(1.3) rotate(-1deg);
-}
-
-.note {
-  background-color: rgb(161, 218, 253);
-  border-radius: 10px;
-  padding: 1rem;
-  min-height: 170px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  white-space: pre-wrap;
-  margin-top: 2.5rem;
-  margin-left: 1.5rem;
-  background: rgba(255, 255, 255, 0.19);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6.6px);
-  -webkit-backdrop-filter: blur(6.6px);
-}
-
-.note-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.delete-icon {
-  cursor: pointer;
-}
-
-.delete-icon:hover{
-  transform: scale(1.7) rotate(-1deg);
-}
-
-/* .search {
-  display: flex;
-  align-items: center;
-  background-color: rgb(233, 233, 233);
-  border-radius: 10px;
-  padding: 0.5em;
-  margin-bottom: 1.5em;
-  margin-top: 0.5em;
-}
-
-.search input {
-  border: none;
-  background-color: rgb(233, 233, 233);
-}
-
-.search input:focus {
-  outline: none;
-}
-
-.search {
-  transition: all 0.2s ease-in-out;
-}
-.search:hover {
-  transform: scale(1.5);
-} */
-
-
-
-.search-container{
-  background: #fff;
-  height: 30px;
-  border-radius: 30px;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.8s;
-
-box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
-            -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-  inset -4px -4px 6px 0 rgba(255,255,255,.2),
-  inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
-}
-
-.search-container:hover > .search-input{
-  width: 400px;
-}
-
-.search-container .search-input{
-  background: transparent;
-  border: none;
-  outline:none;
-  width: 0px;
-  font-weight: 500;
-  font-size: 16px;
-  transition: 0.8s;
-
-}
-
-.search-container .search-btn .fas{
-  color: #5cbdbb;
-}
-
-@keyframes hoverShake {
-0% {transform: skew(0deg,0deg);}
-25% {transform: skew(5deg, 5deg);}
-75% {transform: skew(-5deg, -5deg);}
-100% {transform: skew(0deg,0deg);}
-}
-
-.search-container:hover{
-animation: hoverShake 0.15s linear 3;
+  .card-glow:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9); /* Adds the glowing effect */
+  }
 }
